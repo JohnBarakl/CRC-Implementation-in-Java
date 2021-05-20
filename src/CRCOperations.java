@@ -165,6 +165,8 @@ public class CRCOperations {
 
         final int numberOfMessages = 3000000; // Αριθμός μηνυμάτων που θα δοκιμαστούν.
 
+        // Παραγωγή τυχαίων μηνυμάτων, υπολογισμό του CRC τους, μετάδοση τους μέσω ενθόρυβου καναλιού και έλεγχο
+        // ορθότητας πραγματικό και απο CRC.
         for (int i = 0; i < numberOfMessages; i++){
             long message = generateRandomMessage(k); // Δεδομένα προς μετάδοση.
 
